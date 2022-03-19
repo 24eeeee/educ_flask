@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+  <h1>We are caring how you doing</h1>
+  <a href="/">Want to tell us?</a>
+</head>
+<body>
+<h2>Previous answers</h2>
+<table border="1px">
+    <tr>
+        <th width="512px">Answer</th>
+        <th width="128px">Mood</th>
+    </tr>
+{% for answer in answers %}
+    <tr>
+        <td>{{ answer.text }}</td>
+        <td>{{ answer.mood }}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
