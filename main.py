@@ -8,10 +8,6 @@ Answer = namedtuple('answer', 'text mood')
 answers = []
 
 
-@app.route('/test')
-def test():
-    return str(request.args.get('mood'))
-
 @app.route('/')
 @app.route('/main')
 @app.route('/main/')
